@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "declaration": false,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2020",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "lib": ["ES2021.String"],
+    "paths": {
+      "~/*": ["app/*"],
+      "*": ["app/common/@types/*", "../../@types/*"],
+      "@auth/*": ["./app/auth/*"],
+      "@common/*": ["./app/common/*"],
+      "@test/*": ["./test/*"],
+      "@entities/*": ["./app/entities/*"],
+      "@middlewares/*": ["./app/middlewares/*"],
+      "@modules/*": ["./app/modules/*"],
+      "@generated/*": ["./app/generated/*"],
+      "@utils/*": ["./app/utils/*"],
+      "@shared/*": ["../../shared/*"]
+    }
+  }
+}
